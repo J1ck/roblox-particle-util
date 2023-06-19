@@ -10,7 +10,8 @@ Particle Utility Plugin for Roblox
 
 ## Usage
 When youre selecting atleast 1 particle, this UI will show up in the top left of your viewport:
-![image](https://github.com/J1ck/roblox-particle-util/assets/88492622/ece619b9-2f9a-4bf8-8a7e-6db6edcffabf) \n
+![image](https://github.com/J1ck/roblox-particle-util/assets/88492622/ece619b9-2f9a-4bf8-8a7e-6db6edcffabf)
+
 You can input an Emit Count and a Delay Time, and it will set the Emit Count and Delay Time of every selected particle.
 If you have multiple particles selected with different Emit Count's or Delay Time's, the prompt will show "..." instead.
 Pressing the Emit button will emit every particle selected, taking their Emit Count and Delay Time into account.
