@@ -24,8 +24,8 @@ Each particle's Emit Count and Delay Time are stored in attributes for programme
 If you havent interacted with a particle using the plugin, the attributes will not be there.
 
 Example:
-```lua
-for _, Particle : ParticleEmitter in Object:GetDescendants do
+```luau
+for _, Particle : ParticleEmitter in Object:GetDescendants() do
   if Particle:IsA("ParticleEmitter") == false then
     continue
   end
@@ -33,6 +33,8 @@ for _, Particle : ParticleEmitter in Object:GetDescendants do
   local DelayTime : number = Particle:GetAttribute("DelayTime") or 0
   local EmitCount : number = Particle:GetAttribute("EmitCount") or 1
   
-  task.delay(DelayTime, Particle.Emit, Particle, EmitCount)
+  task.delay(DelayTime, function()
+      Particle:Emit(EmitCount)
+  end)
 end
 ```
