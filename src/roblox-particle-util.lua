@@ -148,5 +148,3 @@ plugin.Unloading:Once(function()
 	SelectedParticles = {}
 	MainGui:Destroy()
 end)
-
-print("started")
